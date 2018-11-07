@@ -11,12 +11,12 @@ router.get('/toomanyredirects', function(req, res, next) {
   setTimeout(function(){res.redirect('/toomanyredirects');}, 3000);
 });
 
-router.get('/help', function(req, res, next) {
+router.get('/thiswillnot', function(req, res, next) {
   res.render('index', {title: 'This will take forever to load'});
 });
 
 router.get('/:anything', function(req, res, next) {
-  res.redirect('/help');
+  res.redirect('/thiswillnot');
 });
 
 
