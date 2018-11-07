@@ -12,7 +12,7 @@ router.get('/toomanyredirects', function(req, res, next) {
 });
 
 router.get('/help', function(req, res, next) {
-  res.render('index', {title: 'Help - This will take forever to load'});
+  res.render('index', {title: 'This will take forever to load'});
 });
 
 router.get('/:anything', function(req, res, next) {
